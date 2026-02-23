@@ -1,4 +1,4 @@
-name: Display Message on push
+name: Display Message on Push
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
 jobs:
   show-message:
     runs-on: ubuntu-latest
-
-  steps:
-    - name: Print Message
-      run: echo "push detected. CI is running!"
+    steps:
+      - name: Print Message
+        run: echo "Push detected. CI is running!"
